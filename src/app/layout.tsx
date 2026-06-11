@@ -5,7 +5,7 @@ import { Providers } from "./Providers";
 import { Suspense } from "react";
 
 export const metadata: Metadata = {
-  title: "WhiteBoard by An Kun Studio",
+  title: "White Board by An Kun Studio",
 };
 
 const inter = Inter({
@@ -23,16 +23,16 @@ export default function RootLayout({
     <html lang="en" className={inter.className}>
       <head>
         <link
-          href="https://liveblocks.io/favicon-32x32.png"
+          href="/Logo-An-Kun-Studio-White.ico"
           rel="icon"
           sizes="32x32"
-          type="image/png"
+          type="image/x-icon"
         />
         <link
-          href="https://liveblocks.io/favicon-16x16.png"
+          href="/Logo-An-Kun-Studio-White.ico"
           rel="icon"
           sizes="16x16"
-          type="image/png"
+          type="image/x-icon"
         />
       </head>
       <body>

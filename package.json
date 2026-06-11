@@ -21,8 +21,15 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-error-boundary": "^4.0.11",
-    "tldraw": "^3.0.2"
-  },
+    "@tldraw/utils": "3.0.2",
+    "@tldraw/state": "3.0.2",
+    "@tldraw/store": "3.0.2",
+    "@tldraw/validate": "3.0.2",
+    "@tldraw/tlschema": "3.0.2",
+    "@tldraw/state-react": "3.0.2",
+    "@tldraw/editor": "3.0.2",
+    "tldraw": "3.0.2"  },
+    
   "devDependencies": {
     "@types/react": "^18.3.3",
     "prettier": "^3.3.2",

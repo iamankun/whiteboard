@@ -8,19 +8,19 @@ export function Badge({
   return (
     <a
       className={styles.badge}
-      href="https://liveblocks.io"
+      href="https://ankun.dev"
       rel="noreferrer"
       target="_blank"
       {...props}
     >
       <picture>
         <source
-          srcSet="https://liveblocks.io/badge-dark.svg"
+          srcSet="/Logo An Kun Studio Black Text.png"
           media="(prefers-color-scheme: dark)"
         />
         <img
-          src="https://liveblocks.io/badge-light.svg"
-          alt="Made with Liveblocks"
+          src="/Logo An Kun Studio Black Text.png"
+          alt="An Kun Studio"
           className={styles.image}
         />
       </picture>
