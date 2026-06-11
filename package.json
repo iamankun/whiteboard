@@ -29,10 +29,11 @@
     "@tldraw/state-react": "3.0.2",
     "@tldraw/editor": "3.0.2",
     "tldraw": "3.0.2"  },
-    
+
   "devDependencies": {
     "@types/react": "^18.3.3",
     "prettier": "^3.3.2",
-    "typescript": "^5.4.5"
+    "typescript": "^5.4.5",
+    "next": "^14.2.11"
   }
 }
