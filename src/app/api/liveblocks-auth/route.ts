@@ -5,11 +5,19 @@ import { getRandomUser } from "@/database";
 // Authenticating your Liveblocks application
 // https://liveblocks.io/docs/authentication
 
-const liveblocks = new Liveblocks({
-  secret: process.env.LIVEBLOCKS_SECRET_KEY as string,
-});
+function getLiveblocks() {
+  const secret = process.env.LIVEBLOCKS_SECRET_KEY;
+  if (!secret) {
+    throw new Error(
+      "LIVEBLOCKS_SECRET_KEY is not set. Please add it to your .env.local file."
+    );
+  }
+  return new Liveblocks({ secret });
+}
 
 export async function POST(request: NextRequest) {
+  const liveblocks = getLiveblocks();
+
   // Get the current user's unique id and info from your database
   const user = getRandomUser();
 

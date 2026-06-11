@@ -1,7 +1,7 @@
 "use client";
 
 import "tldraw/tldraw.css";
-import { Tldraw, DefaultStylePanel, DefaultStylePanelContent } from "tldraw";
+import { Tldraw, DefaultStylePanel } from "tldraw";
 import { useStorageStore } from "./useStorageStore";
 import { useSelf } from "@liveblocks/react/suspense";
 import { Avatars } from "@/components/Avatars";
@@ -32,7 +32,8 @@ export function StorageTldraw() {
           StylePanel: () => (
             <div
               style={{
-                display: "flex-column",
+                display: "flex",
+                flexDirection: "column",
                 marginTop: 4,
               }}
             >
